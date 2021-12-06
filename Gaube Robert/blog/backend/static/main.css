@@ -1,0 +1,8 @@
+.article_title{
+    text-decoration: none;
+    color: green;
+    transition: all 0.2s;
+}
+.article_title:hover{
+    color: greenyellow;
+}
