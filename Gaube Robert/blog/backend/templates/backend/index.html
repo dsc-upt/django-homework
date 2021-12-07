@@ -19,31 +19,18 @@
     <div class="container">
         <div class="row">
             <div class="col" style="width: 100vw;">
-                <div style="padding-top: 30px;">
+                    <p><font size="20px">{{text}}</font></p>
+                    {% for article in articles %}
+                    <div style="padding-top: 30px;">
                     <div class="row" style="width: 1152px;">
                         <div class="col" style="width: 954px;">
-                            <a class="article_title" href="#">
-                                <h1 style="font-family: 'Open Sans', sans-serif;width: 100%;">Human Dignity Org.</h1>
-                            </a>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="row">
-                                        <div class="col">
-                                            <p class="text-justify" style="padding: 0px;padding-right: 21px;font-family: 'Open Sans', sans-serif;width: 100%;"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum ut libero a pretium. Nulla congue venenatis nulla, vitae efficitur felis accumsan at. Maecenas interdum urna id neque hendrerit faucibus.
-                                                Vestibulum ac varius nunc, in&nbsp;<br><br></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <p style="font-weight: bold;font-family: 'Open Sans', sans-serif;">~</p>
-                                </div>
-                            </div>
+                            <h1 style="font-family: 'Open Sans', sans-serif;width: 100%;"><a class="article_title" href="{% url 'article' article.id %}">{{ article.title }}</a> <font size="5px" style="color: #595959;">- {{article.date}}</font></h1>
                         </div>
                     </div>
+                    {% endfor %}
                 </div>
                 <hr style="color: rgb(111,111,111);background-color: #4e4e4e;width: 697px;height: 0px;padding-top: 0px;margin-top: 37px;">
+                <a href="article/create">Add a new entry</a>
             </div>
         </div>
     </div>

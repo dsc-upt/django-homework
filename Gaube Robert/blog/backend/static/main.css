@@ -1,8 +1,24 @@
+a{
+    text-decoration: none;
+    color: green;
+    transition: all 0.2s;
+    border: 1px black solid;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+a:hover{
+    font-size: 1.2rem;
+}
 .article_title{
     text-decoration: none;
     color: green;
     transition: all 0.2s;
+    border: none;
+    padding: 0;
+    margin-top: 0;
 }
 .article_title:hover{
     color: greenyellow;
+    font-size: 40px;
 }
