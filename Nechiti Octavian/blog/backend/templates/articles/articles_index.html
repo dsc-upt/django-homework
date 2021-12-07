@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Welcome to my awesome blog!</h2>
+<h3>Choose which article you want to see:</h3>
+{% for article in articles %}
+   <a href="/article/{{ article.pk }}"><h4>{{ article.title }}</h4></a>
+{% endfor %}
+{% endblock %}
