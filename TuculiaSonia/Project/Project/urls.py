@@ -16,6 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from backend.views import *
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', article_list_view),
+    path('article/<int:pk>', article_view),
+    path('article/create', myform_view),
 ]
