@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title> News Articles</title>
+    </head>
+    <body>
+        <h4> ARTICOLELE DIN FOTBALUL DE SEARA</h4>
+        {% for article in articles %}
+            Titlu:
+            <p>{{ article.title}}</p>
+            Continut:
+            <p>{{ article.content}}</p>
+            Data:<p>{{ article.date}}</p>
+            <a href="/article/{{ article.id }}"> Show more </a>
+        {% endfor %}
+
+    </body>
+</html>
