@@ -1,0 +1,10 @@
+<head>
+    <title>
+        All articles
+    </title>
+</head>
+<body>
+    {% for article in articles %}
+        <a href = "article/{{ article.pk }}"> {{ article.title }}</a><br>
+    {% endfor %}
+</body>
