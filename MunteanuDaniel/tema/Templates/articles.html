@@ -1,0 +1,10 @@
+<html>
+    <head>
+        <title>Articles</title>
+    </head>
+    <body>
+        {% for i in articles %}
+            <p><a href="/article/{{ i.id }}">{{ i.title }}</a></p>
+        {% endfor %}
+    </body>
+</html>
