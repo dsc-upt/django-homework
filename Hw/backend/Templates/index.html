@@ -1,0 +1,7 @@
+{% extends "Base.html" %}
+{% block content %}
+    List:<br>
+    {% for article in articles %}
+    <a href="/article/{{ article.pk }}">{{ article.title}} </a><br>
+    {% endfor %}
+{% endblock %}
