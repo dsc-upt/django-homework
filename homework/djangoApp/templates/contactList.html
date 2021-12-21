@@ -1,0 +1,13 @@
+<html>
+<head>
+    <title>Contacts</title>
+</head>
+<body>
+    <p>
+        {% for i in contact %}
+            {{ i.name }}
+            {{ i.phone_number }}<br><br>
+        {% endfor %}
+    </p>
+</body>
+</html>
