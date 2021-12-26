@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title> All Articles</title>
+    </head>
+
+    <body>
+        <ul>
+            {% for item in obj_list %}
+            <li> {{ item.title }} <a href = "content/{{ item.id }}"> Read Article here </a> </li>
+            {%endfor%}
+        </ul>
+    </body>
+</html>
